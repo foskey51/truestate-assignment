@@ -1,5 +1,5 @@
 ## Workflow architecture
-![workflow](./images/workflow.svg)
+![workflow](../images/workflow.svg)
 
 
 ## Folder structure and module responsibility
