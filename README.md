@@ -9,10 +9,10 @@ The Retail Sales Dashboard is a React-based analytics interface designed to view
 - axios (for api call)
 
 ## Search impl summary
-The project uses fuzzy search powered by fuseJS, so the data can be searched even with typo's, misspellings
+The project uses fuzzy search powered by fuseJS, so the data can be searched even with typo's, misspellings.
 
 ## Filter impl summary
-Filtering is done with simple javascript inbuilt method
+Filtering is done with a simple javascript inbuilt method
 ```
 data.filter(() => ...)
 ```
@@ -23,7 +23,7 @@ Sorting is done with simple javascript
 arrays.sort(data);
 ```
 ## Pagination impl summary 
-The pagination can be added in the backend with few checks and using `.skip() ` in mongoDB or like with `OFFSET` in postgresql, since the project is for demo purpose I've use a similar logic for frontend only using `arrays.slice()` where offset is controlled by setPage() state.
+The pagination can be added in the backend with few checks and using `.skip() ` in mongoDB or like with `OFFSET` in postgresql, since the project is for demo purpose I've used a similar logic in frontend using `arrays.slice()` where offset is controlled by `setPage()` state.
 
 ## SETUP
 
