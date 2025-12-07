@@ -5,11 +5,11 @@ export default function Pagination({ page, setPage, pagination }) {
   const canGoNext = page < totalPages;
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-3">
+    <div className="flex flex-col cursor-pointer md:flex-row justify-between items-center mt-6 gap-3">
       <button
         onClick={() => canGoPrev && setPage((p) => p - 1)}
         disabled={!canGoPrev}
-        className="px-5 py-2 bg-gray-200 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-5 py-2 bg-gray-200 rounded disabled:opacity-50"
       >
         Previous
       </button>
@@ -21,7 +21,7 @@ export default function Pagination({ page, setPage, pagination }) {
       <button
         onClick={() => canGoNext && setPage((p) => p + 1)}
         disabled={!canGoNext}
-        className="px-5 py-2 bg-gray-200 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-5 py-2 cursor-pointer bg-gray-200 rounded disabled:opacity-50"
       >
         Next
       </button>
