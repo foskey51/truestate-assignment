@@ -1,6 +1,8 @@
 # Sales dashboard (truestate assignment)
 The Retail Sales Dashboard is a React-based analytics interface designed to view, filter, sort, and explore retail sales data efficiently. It supports both API-powered data fetching and local dummy data fallback.
 
+>Live link: https://foskey51.github.io/truestate-assignment
+
 ## Tech stack
 - reactJS + tailwind
 - fuseJS (for searching)
