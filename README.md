@@ -1,16 +1,37 @@
-# React + Vite
+# Sales dashboard (truestate assignment)
+The Retail Sales Dashboard is a React-based analytics interface designed to view, filter, sort, and explore retail sales data efficiently. It supports both API-powered data fetching and local dummy data fallback.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech stack
+- reactJS + tailwind
+- fuseJS (for searching)
+- axios (for api call)
 
-Currently, two official plugins are available:
+## Search impl summary
+The project uses fuzzy search powered by fuseJS, so the data can be searched even with typo's, misspellings
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Filter impl summary
+Filtering is done with simple javascript inbuilt method
+```
+data.filter(() => ...)
+```
 
-## React Compiler
+## Sorting impl summary
+Sorting is done with simple javascript 
+```
+arrays.sort(data);
+```
+## Pagination impl summary 
+The pagination can be added in the backend with few checks and using `.skip() ` in mongoDB or like with `OFFSET` in postgresql, since the project is for demo purpose I've use a similar logic for frontend only using `arrays.slice()` where offset is controlled by setPage() state.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## SETUP
 
-## Expanding the ESLint configuration
+### 1. clone the project 
+```
+https://github.com/foskey51/truestate-assignment.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. install and run the project
+```
+npm i && npm run dev
+```
+
